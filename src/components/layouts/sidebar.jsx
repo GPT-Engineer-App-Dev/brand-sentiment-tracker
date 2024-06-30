@@ -39,7 +39,7 @@ function SharedLayout() {
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <a href="/" className="flex items-center gap-2 font-semibold">
               <Package2 className="h-6 w-6" />
-              <span className="">Acme Inc</span>
+              <span className="">Sentiment Tracker</span>
             </a>
           </div>
           <div className="flex-1">
@@ -50,6 +50,27 @@ function SharedLayout() {
               >
                 <Home className="h-4 w-4" />
                 Home
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <LineChart className="h-4 w-4" />
+                Dashboard
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <Users className="h-4 w-4" />
+                Brands
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <Bell className="h-4 w-4" />
+                Alerts
               </a>
             </nav>
           </div>
@@ -75,7 +96,7 @@ function SharedLayout() {
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
                   <Package2 className="h-6 w-6" />
-                  <span className="sr-only">Acme Inc</span>
+                  <span className="sr-only">Sentiment Tracker</span>
                 </a>
                 <a
                   href="#"
@@ -83,6 +104,27 @@ function SharedLayout() {
                 >
                   <Home className="h-5 w-5" />
                   Home
+                </a>
+                <a
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <LineChart className="h-5 w-5" />
+                  Dashboard
+                </a>
+                <a
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <Users className="h-5 w-5" />
+                  Brands
+                </a>
+                <a
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <Bell className="h-5 w-5" />
+                  Alerts
                 </a>
               </nav>
             </SheetContent>
