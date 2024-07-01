@@ -1,7 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 import { LineChart } from "lucide-react";
 
 function Index() {
+  const handleButtonClick = () => {
+    toast("This is a toaster notification!");
+  };
+
   return (
     <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
       <div>
@@ -9,6 +15,9 @@ function Index() {
         <p className="text-center">
           Track consumer sentiment for different brands.
         </p>
+      </div>
+      <div className="flex justify-center my-4">
+        <Button onClick={handleButtonClick}>Show Toaster</Button>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card>
